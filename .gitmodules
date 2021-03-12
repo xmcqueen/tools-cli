@@ -1,0 +1,10 @@
+[submodule "thirdparty/Jinja2Cpp"]
+	path = thirdparty/Jinja2Cpp
+	url = https://github.com/jinja2cpp/Jinja2Cpp.git
+[submodule "thirdparty/boost"]
+	path = thirdparty/boost
+	url = https://github.com/Manu343726/boost-cmake.git
+	branch = master
+[submodule "thirdparty/nlohmann"]
+	path = thirdparty/nlohmann
+	url = https://github.com/nlohmann/json.git
