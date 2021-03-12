@@ -3,6 +3,6 @@
 
 
 int main(int argc, char* argv[]) {
-    jinja2::CommandLineJ2 cli;
+    jinja2::CommandLine cli;
     return cli.Execute(argc, argv);
 }
