@@ -16,7 +16,6 @@ struct IParamResolver
 class JsonParamResolver : public IParamResolver
 {
 public:
-    // JsonParamResolver() = default;
 
     const ValuesMap ParamsFromFile(const std::string& filePath) override;
 

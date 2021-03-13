@@ -10,10 +10,19 @@ namespace jinja2 {
 const ValuesMap JsonParamResolver::ParamsFromFile(const std::string &filePath)
 {
     nlohmann::json values = {
-            {"message", "Hello World from Parser!"}
+            {"message", "Hello World from Parser!"},
+{"name", "name1"},
+{"asleep", false}
     };
     auto x = Reflect(std::move(values));
-    return {{"params", x}};
+    //return {{"params", x}};
+    return x;
+
+    //ValuesMap params {
+        //{"name", "name1"},
+        //{"asleep", false},
+    //};
+    //return params;
 }
 
 } // namespace jinja2
