@@ -40,10 +40,9 @@ add_subdirectory (thirdparty/Jinja2Cpp ${CMAKE_CURRENT_BINARY_DIR}/thirdparty/ji
 add_executable(j2cli 
     src/command_line.cpp
     src/command_line.h
-    src/main_j2.cpp
+    src/main.cpp
     src/param_resolver.cpp
     src/param_resolver.h
-    src/yaml_reflector.h
 )
 
 set_target_properties(j2cli PROPERTIES

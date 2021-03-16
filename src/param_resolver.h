@@ -1,27 +1,18 @@
 #pragma once
 
-//#include "yaml_reflector.h"
 #include <jinja2cpp/value.h>
 
-namespace jinja2 {
+namespace j2cli {
 
-struct IParamResolver
-{
-    virtual ~IParamResolver() = default;
+struct IParamResolver {
+  virtual ~IParamResolver() = default;
 
-    virtual const ValuesMap ParamsFromFile(const std::string& filePath) = 0;
-
+  virtual const jinja2::ValuesMap ParamsFromFile(const std::string &filePath) = 0;
 };
 
-class JsonParamResolver : public IParamResolver
-{
+class JsonParamResolver : public IParamResolver {
 public:
-
-    const ValuesMap ParamsFromFile(const std::string& filePath) override;
-
-
+  const jinja2::ValuesMap ParamsFromFile(const std::string &filePath) override;
 };
 
-
-
-} // namespace jinja2
+} // namespace j2cli
